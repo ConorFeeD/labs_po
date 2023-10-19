@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Выполнение денежнго перевода</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>      
+    <form>
+        <div>
+            <label for="inputName" class="form-label">Имя носителя карты</label>
+            <input type="name" class="form-control" id="Name" placeholder="IVANOV IVAN">
+        </div>
+        <div>
+            <label for="input" class="form-label">Срок действия карты</label>
+            <input type="date" class="form-control" id="inputDate">
+        </div>
+        <div>
+            <label class="form-label">Номер карты</label>
+            <input type="card" class="form-control" id="inputNumber" placeholder="ХХХХ ХХХХ ХХХХ ХХХХ">
+        </div>
+        <div>
+            <label for="inputState" class="form-label">Выберите операцию</label>
+            <select id="inputState" class="form-select">
+                <option selected>Выберите...</option>
+                <option>Перевод денежных средств</option>
+                <option>Принятие денежных средств</option>
+                <option>БАМБАЛЕЙЛА</option>
+            </select>
+        </div>
+        <div>
+            <button>Выполнить</button>
+        </div>
+    </form>
+    
+</body>
+
+</html>

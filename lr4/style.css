@@ -1,0 +1,24 @@
+div h2{
+    font-style:italic;
+    font-weight: 700;
+    color:chartreuse
+}
+
+div p{
+    font-style:italic;
+    font-weight: 700;
+    color:rgb(14, 173, 241)
+}
+
+h1~p {
+    font-style:italic;
+    font-weight: 700;
+}
+
+
+a:not([href="https://github.com/ConorFeeD/LabsKS"]) {
+    font-style:oblique;
+    font-weight: 700;
+    color:rgb(255, 0, 51)
+}
+

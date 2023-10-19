@@ -1,0 +1,19 @@
+* {
+    margin: 0 auto;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: fit-content;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+form *{
+    margin-bottom: 10px;
+}
