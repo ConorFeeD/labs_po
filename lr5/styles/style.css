@@ -3,13 +3,20 @@ body {
   height: 480px;
 }
 
+.Row{
+  position: relative;
+  top: 60px;
+  left: 150px;
+}
+
+
 img {
   position: absolute;
   width: 573.739px;
   height: 407.88px;
   left: 283px;
   right: 93px;
-  top: 65px;
+  top: 80px;
   bottom: 150px;
   transform: rotate(-18deg);
   flex-shrink: 0;
@@ -20,7 +27,7 @@ img {
 }
 
 .Frame_427318513 {
-  position: relative;
+  position: absolute;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -62,38 +69,4 @@ img {
   line-height: 100%;
 }
 
-.Grid_item1 {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--light-900100, #000000);
-}
 
-.Grid_item2 {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--light-900100, #000000);
-}
-
-.Grid_item3 {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--light-900100, #000000);
-}
-
-.Grid_item4 {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--light-900100, #000000);
-}
-
-.Row{
-display: flex;
-align-items: flex-start;
-}
-
-.Grid{
-display: inline-flex;
-transform: rotate(45deg);
-flex-direction: column;
-align-items: flex-start;
-}
