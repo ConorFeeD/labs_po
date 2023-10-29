@@ -1,55 +1,54 @@
-let th1 = document.getElementsByTagName("th")[0];
-let th2 = document.getElementsByTagName("th")[1];
-let th3 = document.getElementsByTagName("th")[2];
-let th4 = document.getElementsByTagName("th")[3];
-let th5 = document.getElementsByTagName("th")[4];
+let th0 = document.getElementsByTagName("th")[0];
+let th1 = document.getElementsByTagName("th")[1];
+let th2 = document.getElementsByTagName("th")[2];
 
-
-
-th1.addEventListener("mouseover", () => {
-  th1.classList.add("cl2");
-  th1.classList.remove("cl1");
-  th1.classList.remove("cl5");
-});
-th1.addEventListener("mouseout", () => {
-  th1.classList.add("cl5");
-  th1.classList.remove("cl2");
+th0.addEventListener('mouseover', () => {
+    th0.classList.add("cl2");
+    th0.classList.remove("cl1");
+    th0.classList.remove("cl5");
 });
 
-th2.addEventListener("dblclick", () => {
-  th2.classList.add("cl3");
-  th2.classList.remove("cl1");
+th0.addEventListener('mouseout', () => {
+    th0.classList.add("cl1");
+    th0.classList.remove("cl2");
 });
 
-th3.addEventListener("click", () => {
-  th3.classList.add("cl4");
-  th3.classList.remove("cl1");
+th1.addEventListener('dblclick', () => {
+    th1.classList.add("cl3");
+    th1.classList.remove("cl2");
 });
 
-function enlargeText() {
-  const textElement = document.querySelector(".text");
-  const currentFontSize = parseFloat(getComputedStyle(textElement).fontSize);
-  const enlargedFontSize = currentFontSize * 1.5;
-  textElement.style.fontSize = enlargedFontSize + "px";
-}
-
-function resetText() {
-  const textElement = document.querySelector(".text");
-  textElement.style.fontSize = "16px";
-}
+th2.addEventListener('click', () => {
+    th2.classList.add("cl4");
+    th2.classList.remove("cl1");
+});
 
 let sum = 0;
-function addNumber(number) {
-    sum += number;
-}
-function showResult() {
-    alert("Сумма цифр: " + sum);
+function sumnumb (numb){
+    sum+=numb;
+};
+
+function showResult (){
+    alert("Result: "+sum);
+    sum=0;
+};
+
+const userName = prompt("Введите своё имя")
+if (userName == "Кирилл") {
+    alert("Приветствую хозяин")
+    }
+if (userName != "Кирилл") {
+    alert("Я знаю кто ты..")
 }
 
-const userName = prompt("Введите ваше имя:");
-if (userName) {
-alert("Привет, " + userName + "!");
-} else {
-alert("Привет, незнакомец!");
-}
-
+function enlargeText() {
+    const textElement = document.querySelector(".text");
+    const currentFontSize = parseFloat(getComputedStyle(textElement).fontSize);
+    const enlargedFontSize = currentFontSize * 1.5;
+    textElement.style.fontSize = enlargedFontSize + "px";
+  }
+  
+  function resetText() {
+    const textElement = document.querySelector(".text");
+    textElement.style.fontSize = "16px";
+  }

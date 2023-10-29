@@ -1,15 +1,13 @@
 .cl1{
     color: blue;
+    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12px;
 }
 
 .cl2{
     color: red;
-    font-weight: bold;
+    font-weight: normal;
 }
-
-
 
 .cl3{
     color: green;
@@ -18,18 +16,12 @@
 }
 
 .cl4{
-    border-color: red;
-    border-style: dotted;
-    border-radius: 3px;
+    color: black;
+    border: dotted red;
 }
 
 .cl5{
-    color: blue;
-    font-weight: bold;
     font-style: italic;
+    font-weight: normal;
 }
 
-.text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 200;
-}
