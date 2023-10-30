@@ -25,3 +25,13 @@
     font-weight: normal;
 }
 
+#text{
+    width: 280px;
+    height: 21.44px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.hide{
+    opacity: 0;
+}

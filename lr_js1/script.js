@@ -1,6 +1,15 @@
 let th0 = document.getElementsByTagName("th")[0];
 let th1 = document.getElementsByTagName("th")[1];
 let th2 = document.getElementsByTagName("th")[2];
+let p0 = document.getElementsByTagName("p")[0];
+
+p0.addEventListener('mouseover', () => {
+    p0.classList.add('hide');
+});
+
+p0.addEventListener('mouseout', () => {
+    p0.classList.remove('hide');
+})
 
 th0.addEventListener('mouseover', () => {
     th0.classList.add("cl2");
@@ -41,14 +50,4 @@ if (userName != "Кирилл") {
     alert("Я знаю кто ты..")
 }
 
-function enlargeText() {
-    const textElement = document.querySelector(".text");
-    const currentFontSize = parseFloat(getComputedStyle(textElement).fontSize);
-    const enlargedFontSize = currentFontSize * 1.5;
-    textElement.style.fontSize = enlargedFontSize + "px";
-  }
-  
-  function resetText() {
-    const textElement = document.querySelector(".text");
-    textElement.style.fontSize = "16px";
-  }
+
