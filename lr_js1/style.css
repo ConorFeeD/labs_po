@@ -1,0 +1,37 @@
+.cl1{
+    color: blue;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cl2{
+    color: red;
+    font-weight: normal;
+}
+
+.cl3{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.cl4{
+    color: black;
+    border: dotted red;
+}
+
+.cl5{
+    font-style: italic;
+    font-weight: normal;
+}
+
+#text{
+    width: 280px;
+    height: 21.44px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+.hide{
+    opacity: 0;
+}
