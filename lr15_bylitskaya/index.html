@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR13</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <h1>Пример веб-документа</h1>
+    <p>Несколько элементов Веб-документа</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Send">
+    </form>
+    <div>
+        <p>+ абзац</p>
+    </div>
+    <ul>
+        <li>DA</li>
+        <li>NET</li>
+    </ul>
+
+    <h1>Месяцы и таблица</h1>
+    <ol id="monthList">
+        <li>Январь</li>
+        <li>Февраль</li>
+        <li>Март</li>
+        <li>Апрель</li>
+        <li>Май</li>
+        <li>Июнь</li>
+        <li>Июль</li>
+        <li>Август</li>
+        <li>Сентябрь</li>
+        <li>Октябпь</li>
+        <li>Ноябрь</li>
+        <li>Декабрь</li>
+    </ol>
+
+  <main>
+      <h1>Ого</h1>
+      <p>Да ну</p>
+      <h2>Ничего себе</h2>
+      <p>Не может быть</p>
+      <h2>О господи</h2>
+      <p>ОМГ</p>
+      <h3>Вот это текст</h3>
+      <p>И это текст. Конец.</p>
+  </main>
+
+    <button id="showHeadingsBtn">Показать заголовки</button>
+
+    <h1>Тест по графическим редакторам</h1>
+
+<form id="quizForm">
+  <p>1. Какие из перечисленных графических редакторов относятся к векторным?</p>
+  <label><input type="checkbox" name="question1" value="photoshop"> Photoshop</label><br>
+  <label><input type="checkbox" name="question1" value="illustrator"> Illustrator</label><br>
+  <label><input type="checkbox" name="question1" value="gimp"> GIMP</label><br>
+
+  <p>2. Как называется инструмент для ретуши и удаления дефектов в Photoshop?</p>
+  <label><input type="radio" name="question2" value="clone"> Клонирование</label><br>
+  <label><input type="radio" name="question2" value="brush"> Кисть</label><br>
+  <label><input type="radio" name="question2" value="crop"> Обрезка</label><br>
+
+  <br>
+  <button type="button" onclick="showResults()">Результат</button>
+</form>
+
+<div id="results"></div>
+  <div class="yesno">
+    <br>
+    <label class="switch"><input type="radio" name="yesNo" value="yes"> Да</label>
+    <br>
+    <label class="switch"><input type="radio" name="yesNo" value="no"> Нет</label>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
