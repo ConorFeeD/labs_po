@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Progress Bar</title>
+  <!-- Подключение Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Дополнительные стили для индикатора процесса */
+    .custom-progress-bar .progress-bar {
+      height: 20px;
+      background-color: green;
+      background-image: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <!-- Индикатор процесса -->
+    <div class="progress custom-progress-bar">
+      <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </div>
+
+  <a href="index2.html">kick me</a>
+
+  <!-- Подключение Bootstrap JS (необходимо для некоторых функций Bootstrap) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

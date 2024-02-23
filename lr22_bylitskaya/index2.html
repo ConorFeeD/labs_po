@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <!-- Подключение Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Дополнительные стили для галереи */
+    .thumbnail {
+      border: 1px solid #ddd;
+      padding: 5px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .thumbnail img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Фото-миниатюры -->
+      <div class="col-md-4">
+        <div class="thumbnail" data-toggle="modal" data-target="#exampleModal" data-img="pictures/1.png" data-description="Класс">
+          <img src="pictures/1.png" alt="Фото 1">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail" data-toggle="modal" data-target="#exampleModal" data-img="pictures/2.jpg" data-description="Я уже смешарик">
+          <img src="pictures/2.jpg" alt="Фото 2">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail" data-toggle="modal" data-target="#exampleModal" data-img="pictures/3.jpg" data-description="4255 1901 3196 9126">
+          <img src="pictures/3.jpg" alt="Фото 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно для просмотра фотографии -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Смотри</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="" alt="Фото" id="modalImage" style="width: 100%; height: auto;">
+          <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подключение Bootstrap JS (необходимо для некоторых функций Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript для обновления модального окна при клике на фото -->
+  <script>
+    $('.thumbnail').click(function() {
+      var imgSrc = $(this).data('img');
+      var imgDescription = $(this).data('description');
+      $('#modalImage').attr('src', imgSrc);
+      $('#modalDescription').text(imgDescription);
+    });
+  </script>
+</body>
+</html>
