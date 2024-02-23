@@ -1,0 +1,67 @@
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-label::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-input:checked + .toggle-label {
+    background-color: #00ff1e;
+  }
+  
+  .toggle-input:checked + .toggle-label::before {
+    transform: translateX(26px);
+  }
+  
+  /* Добавленные стили для надписей */
+  .toggle-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+  }
+  
+  .toggle-text-on,
+  .toggle-text-off {
+    color: #000000;
+  }
+  
+  .toggle-input:checked + .toggle-label .toggle-text-on,
+  .toggle-input:not(:checked) + .toggle-label .toggle-text-off {
+    opacity: 1;
+  }
+  
+  .toggle-text-on,
+  .toggle-text-off {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
