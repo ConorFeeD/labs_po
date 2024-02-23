@@ -1,0 +1,14 @@
+li {
+    transition: opacity 0.3s ease;
+}
+
+.myButton {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+}
+
+.myButton2 {
+    background-color: red;
+}
